@@ -481,6 +481,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #43b1d2;
 }
 
 @media (max-width: 1200px) {
@@ -541,5 +542,115 @@ h3 {
 
 .serices__text {
   color: #fff;
+}
+
+.why {
+  padding-top: 80px;
+}
+
+@media (max-width: 576px) {
+  .why {
+    padding-top: 50px;
+  }
+}
+
+.why-heading {
+  max-width: 878px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.why-heading__title {
+  margin-bottom: 30px;
+}
+
+.why-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .why-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.why__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.why-item {
+  max-width: 363px;
+}
+
+@media (max-width: 992px) {
+  .why-item {
+    margin-bottom: 40px;
+  }
+}
+
+.why-item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 19px;
+}
+
+.why-item__img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 76px;
+  background-color: #1a9bdc;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+
+.why-item__title {
+  font-size: 30px;
+}
+
+.why-content__img-wrap {
+  width: 337px;
+  margin: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .why-content__img-wrap {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.why-content__img {
+  display: block;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

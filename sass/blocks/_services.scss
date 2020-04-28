@@ -1,6 +1,7 @@
 .services__row {
     display: flex;
     justify-content: center;
+    background-color: #43b1d2;
 
     @media (max-width: 1200px) {
         flex-wrap: wrap;
