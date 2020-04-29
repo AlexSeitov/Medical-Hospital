@@ -49,4 +49,15 @@ $(function() {
         $(this).toggleClass("nav-toggle--active");
         $(".mobile-menu").toggleClass("mobile-menu--active");
     });
+
+
+    // accordeon
+
+    $('.works-accordeon__title').click(function(event) {
+		if($('.works-accordeon').hasClass('works-accordeon--one')){
+			$('.works-accordeon__title').not($(this)).removeClass('works-accordeon__title--active');
+			$('.works-accordeon__text').not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass('works-accordeon__title--active').next().slideToggle(300);
+	});
 });
