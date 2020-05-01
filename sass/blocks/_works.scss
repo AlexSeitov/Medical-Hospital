@@ -84,21 +84,47 @@
 
 .works-content__img {
     max-width: 100%;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 1px 1px #1a9bdc,
+                    2px 2px #1a9bdc,
+                    3px 3px #1a9bdc,
+                    4px 4px #1a9bdc,
+                    5px 5px #1a9bdc,
+                    6px 6px #1a9bdc,
+                    7px 7px #1a9bdc;
+                    transform: translateX(-7px);
+    }
 }
 
 .works-content__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    color: #6f6f6e;
     margin-bottom: 13px;
+}
+
+.works-content__title a {
+    color: #6f6f6e;
+
+    &:hover {
+        color: #3d3d3d;
+        text-decoration: underline;
+    }
 }
 
 .works-content__date {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 15px;
     display: block;
-    color: #1992ce;
+    color: #0087be;
     margin-bottom: 27px;
+
+    &:hover {
+        color: #0274a1;
+        text-decoration: underline;
+    }
 }
 
 
