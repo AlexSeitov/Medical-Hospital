@@ -59,5 +59,23 @@ $(function() {
 			$('.works-accordeon__text').not($(this).next()).slideUp(300);
 		}
 		$(this).toggleClass('works-accordeon__title--active').next().slideToggle(300);
-	});
+    });
+
+
+    // magnific popup
+    
+    $('.gallery__container').magnificPopup({
+        type: 'image',
+        delegate: 'a',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery:{
+          enabled:true
+        },
+        zoom: {
+        enabled: true, 
+        duration: 300, 
+        easing: 'ease-in-out',    
+        }
+    }); 
 });
