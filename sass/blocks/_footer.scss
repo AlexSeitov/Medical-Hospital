@@ -62,7 +62,7 @@
     display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
-    color: #ffffff82;
+    color: #979797;
     opacity: 0.8;
 }
 
@@ -95,7 +95,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: normal;
-    color: #ffffff82;
+    color: #979797;
     opacity: 0.8;
 }
 
@@ -125,7 +125,7 @@
     outline: none;
     border-bottom: 1px solid #5d5d5d;
     background-color: transparent;
-    padding: 16px 0;
+    padding: 16px;
 
     &:focus {
         background-color: #64667c;
@@ -142,6 +142,8 @@
 }
 
 .footer-social {
+    display: flex;
+    justify-content: flex-start;
     margin-bottom: 20px;
 
     @media (max-width: 991.98px) {

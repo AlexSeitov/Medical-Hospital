@@ -6,7 +6,7 @@
     left: 0;
     right: 0;
     background-color: #fff;
-    padding: 18px 0 10px;
+    padding-top: 18px;
     z-index: 9;
 
     @media (max-width: 991.98px) {
@@ -62,12 +62,12 @@
     } 
 }
 .social__link {
-   display: inline-block;
-   height: 24px; 
+    display: inline-block;
 }
 
 .social__link svg {
-    height: 100%;
+    width: 30px;
+    height: 36px;
     transition: all .2s linear;
     
     &:hover {

@@ -302,7 +302,7 @@ h3 {
   left: 0;
   right: 0;
   background-color: #fff;
-  padding: 18px 0 10px;
+  padding-top: 18px;
   z-index: 9;
 }
 
@@ -372,11 +372,11 @@ h3 {
 
 .social__link {
   display: inline-block;
-  height: 24px;
 }
 
 .social__link svg {
-  height: 100%;
+  width: 30px;
+  height: 36px;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
@@ -1443,7 +1443,7 @@ h3 {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
-  color: #ffffff82;
+  color: #979797;
   opacity: 0.8;
 }
 
@@ -1477,7 +1477,7 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: normal;
-  color: #ffffff82;
+  color: #979797;
   opacity: 0.8;
 }
 
@@ -1510,7 +1510,7 @@ h3 {
   outline: none;
   border-bottom: 1px solid #5d5d5d;
   background-color: transparent;
-  padding: 16px 0;
+  padding: 16px;
 }
 
 .footer-form input:focus,
@@ -1545,6 +1545,12 @@ h3 {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 20px;
 }
 
