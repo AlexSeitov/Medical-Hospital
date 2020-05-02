@@ -1,11 +1,20 @@
 .top {
     padding-top: 14px;
-    position: relative;
-    z-index: 101;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
 
     @media (max-width: 992px) {
+        position: fixed;
         box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     }
+}
+
+.top--active {
+    position: fixed;
 }
 
 .top__row {
@@ -76,3 +85,67 @@
 .contacts__text > a {
     color: #6a6a6a;
 }
+
+// nav-toggle
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 1000;
+    
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.nav-toggle--active {
+    position: fixed;
+ }
+ 
+ .nav-toggle__item {
+     font-size: 0;
+     display: block;
+     position: relative;
+     width: 28px;
+     height: 3px;
+     background-color: #272727;
+ 
+     &::before,
+     &::after {
+         content: "";
+         position: absolute;
+         top: -9px;
+         left: 0;
+         width: 28px;
+         height: 3px;
+         background-color: #272727;
+         transition: transform  .2s ease-in, all .2s linear .2s;
+     }
+ 
+     &::after {
+         top: 9px;
+     }
+ }
+ 
+ .nav-toggle--active .nav-toggle__item {
+ 
+     @media (max-width: 992px) {
+         background-color: transparent;
+ 
+         &::before {
+             top: 0;
+             transform: rotate(45deg);
+             transition: top .2s linear, transform .2s ease-in .2s;
+         }
+ 
+         &::after {
+             top: 0;
+             transform: rotate(-45deg);
+             transition: top .2s linear, transform .2s ease-in .2s;
+         }
+     }
+ }

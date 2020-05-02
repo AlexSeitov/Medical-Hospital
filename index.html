@@ -12,7 +12,7 @@
 
     <!--top-panel-->
 
-    <div class="top">
+    <div class="top" id="top">
         <div class="container">
             <div class="top__row">
                 <div class="top-logo">
@@ -54,41 +54,42 @@
                     </div>
                 </div> <!--/top-contacts-->
             </div> <!--/top__row-->
+            <button class="nav-toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
         </div> <!--/ container-->
     </div> <!--/top-->
     
 
     <!--header-->
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__row">
                 <nav class="header-nav">
                     <ul class="header-nav__list">
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="">Home</a>
+                            <a class="header-nav__link" data-scroll="#mainblock" href="#">Home</a>
                         </li>
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="">About</a>
+                            <a class="header-nav__link" data-scroll='#services' href="">Services</a>
                         </li>
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="">Services</a>
+                            <a class="header-nav__link" data-scroll='#works' href="">Blog</a>
                         </li>
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="">Gallery</a>
+                            <a class="header-nav__link" data-scroll='#gallery' href="">Gallery</a>
                         </li>
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="">Blog</a>
+                            <a class="header-nav__link" data-scroll='#team' href="">About</a>
                         </li>
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="">Contact us</a>
+                            <a class="header-nav__link" data-scroll='#footer' href="">Contact us</a>
                         </li>
                     </ul>
                 </nav>
     
-                <button class="nav-toggle" type="button">
-                    <span class="nav-toggle__item">Menu</span>
-                </button>
+                
     
                 <div class="header-social">
                     <a href="" class="social__link">
@@ -129,22 +130,22 @@
         <div class="mobile-menu">
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="">Home</a>
+                    <a class="mobile-menu__link" data-scroll="#mainblock" href="#">Home</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="">About</a>
+                    <a class="mobile-menu__link" data-scroll='#services' href="#">Services</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="">Services</a>
+                    <a class="mobile-menu__link" data-scroll='#works' href="#">Blog</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="">Gallery</a>
+                    <a class="mobile-menu__link" data-scroll='#gallery' href="#">Gallery</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="">Blog</a>
+                    <a class="mobile-menu__link" data-scroll='#team' href="#">About</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="">Contact us</a>
+                    <a class="mobile-menu__link" data-scroll='#footer' href="#">Contact us</a>
                 </li>
             </ul>
 
@@ -224,7 +225,7 @@
 
         <!--mainblock-->
 
-        <section class="mainblock">
+        <section class="mainblock" id="mainblock">
             <div class="container">
                 <div class="mainblock__column">
                     <h1 class="mainblock__title title">We have Best Medicare plan options for you</h1>
@@ -237,7 +238,7 @@
 
         <!--services-->
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="services__row">
                 <div class="services__item">
                     <div class="services__img-wrap">
@@ -382,7 +383,7 @@
 
         <!--works-->
 
-        <section class="works">
+        <section class="works" id="works">
             <div class="container">
                 <div class="works__row">
                     <div class="works__how">
@@ -462,7 +463,7 @@
 
         <!--gallery-->
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="gallery__wrap container">
                 <div class="gallery__heading">
                     <h2 class="gallery__title title">Gallery</h2>
@@ -512,7 +513,7 @@
 
         <!--/team-->
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="team__heading">
                     <h2 class="team__title title">Our Team</h2>
@@ -668,7 +669,7 @@
 
     <!--footer-->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__row">
                 <div class="footer-contacts footer__item">

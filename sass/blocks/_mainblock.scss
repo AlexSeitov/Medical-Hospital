@@ -1,7 +1,7 @@
 .mainblock {
     background: url(../img/mainblock/mainblock-bg.jpg) center no-repeat;
     background-size: cover;
-    padding: 150px 0;
+    padding: 200px 0 100px;
     position: relative;
     z-index: 0;
 
@@ -17,7 +17,7 @@
     }
 
     @media (max-width: 576px) {
-        padding: 58px 0;
+        padding: 120px 0 50px;
     }
 }
 

@@ -3,7 +3,7 @@ $(function() {
     // Fixed Header
 
     var header = $("#header"),
-        mainblockH = 200,
+        mainblockH = 70,
         scrollOffset = $(window).scrollTop();
 
     checkScroll(scrollOffset);
@@ -17,9 +17,9 @@ $(function() {
 
     function checkScroll(scrollOffset) {
         if( scrollOffset >= mainblockH ) {
-            header.addClass("fixed");
+            header.addClass("header-fixed");
         } else {
-            header.removeClass("fixed");
+            header.removeClass("header-fixed");
         }
     }
 
@@ -32,8 +32,8 @@ $(function() {
             blockId = $this.data('scroll'),
             blockOffset = $(blockId).offset().top;
 
-        $(".nav__link").removeClass("nav__link--active");
-        $this.addClass("nav__link--active");
+        $(".header-nav__link").removeClass("header-nav__link--active");
+        $this.addClass("header-nav__link--active");
 
         $("html, body").animate({
             scrollTop:  blockOffset
@@ -48,6 +48,14 @@ $(function() {
 
         $(this).toggleClass("nav-toggle--active");
         $(".mobile-menu").toggleClass("mobile-menu--active");
+        $("#top").toggleClass("top--active");
+    });
+
+    $(".mobile-menu__link").on("click", function(event) {
+        event.preventDefault();
+
+        $(".mobile-menu").removeClass("mobile-menu--active");
+        $(".nav-toggle").removeClass("nav-toggle--active");
     });
 
 
